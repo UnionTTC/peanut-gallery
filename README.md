@@ -1,4 +1,4 @@
-# peanut-gallery
+# Peanut Gallery
 A student directory application built for Union College
 
 ## Feature List:
