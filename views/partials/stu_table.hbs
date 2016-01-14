@@ -1,0 +1,33 @@
+<table id="stuTable" class="table table-hover tablesorter">
+    <thead class="thead" data-toggle="tooltip" data-placement="top" title="Click to sort">
+        <tr class="tr">
+            <th class="th">First Name</th>
+            <th class="th">Last Name</th>
+            <th class="th pg-homestate hidden-xs">Home State</th>
+            <th class="th pg-major">Major</th>
+            <th class="th pg-minor hidden-md hidden-sm hidden-xs">Minor</th>
+            <th class="th pg-classStanding hidden-xs">Class</th>
+            <th class="th pg-residenceHall hidden-sm hidden-xs">Residence</th>
+            <th class="th pg-room hidden-sm hidden-xs">Room</th>
+            <th class="th pg-gender hidden-xs">Gender</th>
+        </tr>
+    </thead>
+
+    <tbody class="tbody">
+        {{#each students}}
+            <tr class="tr" data-toggle="modal" data-target="#myModal" onclick="changeModal('{{ucid}}')">
+                <td class="td">{{nameFirst}}</td>
+                <td class="td">{{nameLast}}</td>
+                <td class="td pg-homestate hidden-xs">{{homeState}}</td>
+                <td class="td pg-major">{{major}}</td>
+                <td class="td pg-minor hidden-md hidden-sm hidden-xs">{{minor}}</td>
+                <td class="td pg-classStanding hidden-xs">{{classStanding}}</td>
+                <td class="td pg-residenceHall hidden-sm hidden-xs">{{residenceHall}}</td>
+                <td class="td pg-room hidden-sm hidden-xs">{{residenceNumber}}</td>
+                <td class="td pg-gender hidden-xs">{{gender}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+{{> stu_modal}}

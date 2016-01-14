@@ -1,8 +1,8 @@
-var express = require('express')
+var express = require('express');
 
-var router = module.exports = express.Router()
+var router = module.exports = express.Router();
 
-router.use(require('./auth'))
-router.use(require('./core'))
-router.use(require('./students'))
-router.use(require('./error'))
+router.use(require('./auth'));
+router.use(require('./core'));
+router.use(require('./students'));
+router.use(require('./error'));

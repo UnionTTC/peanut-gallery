@@ -1,0 +1,43 @@
+<!doctype html>
+<html class="html" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="/styles/bootstrap.darkly.css">
+        <link rel="stylesheet" href="/styles/styles.css">
+        <link rel="stylesheet" href="/styles/font-awesome.css">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        {{#if prev_page}}<link rel="prev" href="{{link_to true page=prev_page}}">{{/if}}
+        {{#if next_page}}<link rel="next" href="{{link_to true page=next_page}}">{{/if}}
+    </head>
+
+    <body class="body pg-body">
+        <!-- One fine body. -->
+        <!-- Part 1: Wrap all page content here -->
+        <div id="wrap">
+            <!-- Begin page content -->
+            <div class="containter">
+                {{{body}}}
+            </div>
+            {{!--
+            <div class="navbar navbar-default navbar-fixed-bottom pg-footer">
+                <div class="container">
+                    <p class="text-muted centered">Created by Keith Wade</p>
+                </div>
+            </div>
+            --}}
+        </div>
+
+        <script src="/scripts/vendor/jquery-1.11.0.min.js"></script>
+        <script src="/scripts/vendor/bootstrap-3.2.0.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
+        <script src="/scripts/vendor/jquery.tablesorter.js"></script>
+        <script src="/scripts/vendor/jquery.tablesorter.widgets.js"></script>
+        <script src="/scripts/tablesorter.details.js"></script>
+    </body>
+</html>

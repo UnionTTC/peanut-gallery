@@ -1,0 +1,36 @@
+{{!--{{> header}}--}}
+{{> buttons_other}}
+
+<div class="container">
+    {{!--
+    <div class="btn-group btn-group-justified">
+        <div class="btn-group">
+            <button type="button" class="btn btn-info">Students</button>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-info">Staff</button>
+        </div>
+    </div>
+    <br>
+    --}}
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title">Under Construction</h3>
+        </div>
+        <div class="panel-body">
+            <p>This site is currently under construction and is subject to change.</p>
+            <p>Staff pages not fully implemented. Please do not try to add, edit, or delete staff entries.</p>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Adding Students</h3>
+        </div>
+        <div class="panel-body">
+            <p>Click here to add a student. UCID must be valid for image to display properly.</p>
+            <form action="/students/add">
+                <input class="btn btn-primary" type="submit" value="Add Student">
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+{{> buttons_other}}
+<div class="container">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title">Under Construction</h3>
+        </div>
+        <div class="panel-body">
+            <p>The temporary login credentials are:</p>
+            <p>Username: kewade</p>
+            <p>Password: 123</p>
+        </div>
+    </div>
+    
+    <form action="/login" method="post" class="form-horizontal">
+        <fieldset>
+        
+            <!-- Form Name -->
+            <legend>Log In</legend>
+            
+            {{> notification}}
+            
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="username">Username</label>
+                <div class="col-md-4">
+                    <input id="username" name="username" type="text" placeholder="UCID" class="form-control input-md" required="">
+                </div>
+            </div>
+    
+            <!-- Password input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="passwordinput">Password</label>
+                <div class="col-md-4">
+                    <input id="password" name="password" type="password" placeholder="Password" class="form-control input-md" required="">
+                </div>
+            </div>
+    
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="signin"></label>
+                <div class="col-md-4">
+                    <button type="submit" id="signin" class="btn btn-primary">Log In</button>
+                </div>
+            </div>
+    
+        </fieldset>
+    </form>
+</div>

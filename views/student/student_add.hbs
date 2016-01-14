@@ -1,0 +1,42 @@
+{{> buttons_other}}
+
+<div class="container">
+    {{#notification}}
+    <div class="panel panel-warning">
+        <div class="panel-heading">
+            <h3 class="panel-title">Error</h3>
+        </div>
+        <div class="panel-body">
+            {{message}}
+        </div>
+    </div>
+    {{/notification}}
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">{{title}}</h3>
+        </div>
+        <div class="form-group pg-add-form">
+            <form action="" method="post">
+                <input type="text" class="form-control" value="{{students.ucid}}" placeholder="UCID" name="ucid"><br>
+                <input type="text" class="form-control" value="{{students.nameFirst}}" placeholder="First Name" name="nameFirst"><br>
+                <input type="text" class="form-control" value="{{students.nameLast}}" placeholder="Last Name" name="nameLast"><br>
+                <input type="text" class="form-control" value="{{students.classStanding}}" placeholder="Class Standing" name="classStanding"><br>
+                <input type="text" class="form-control" value="{{students.phoneNumber}}" placeholder="Phone Number" name="phoneNumber"><br>
+                <input type="text" class="form-control" value="{{students.major}}" placeholder="Major" name="major"><br>
+                <input type="text" class="form-control" value="{{students.minor}}" placeholder="Minor" name="minor"><br>
+                <input type="text" class="form-control" value="{{students.birthday}}" placeholder="Birthday" name="birthday"><br>
+                <input type="text" class="form-control" value="{{students.homeTown}}" placeholder="Home Town" name="homeTown"><br>
+                <input type="text" class="form-control" value="{{students.homeState}}" placeholder="Home State" name="homeState"><br>
+                <input type="text" class="form-control" value="{{students.homeCountry}}" placeholder="Home Country" name="homeCountry"><br>
+                <input type="text" class="form-control" value="{{students.residenceHall}}" placeholder="Residence Hall" name="residenceHall"><br>
+                <input type="text" class="form-control" value="{{students.residenceNumber}}" placeholder="Room Number" name="residenceNumber"><br>
+                <input type="text" class="form-control" value="{{students.quote}}" placeholder="Quote" name="quote"><br>
+                <input type="text" class="form-control" value="{{students.gender}}" placeholder="Gender" name="gender"><br>
+
+                <button type="submit" name="action" value="save" class="btn btn-primary btn-success"><span class="fa fa-check"></span> Save</button>
+                <button type="submit" name="action" value="delete" class="btn btn-primary btn-danger"><span class="fa fa-times"></span> Delete</button>
+                <a href="/" class="btn btn-default">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>

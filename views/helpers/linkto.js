@@ -1,4 +1,3 @@
-// OBSOLETE
 var buildUrl = require('../../lib/build-url');
 
 /**

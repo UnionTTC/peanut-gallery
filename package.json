@@ -1,39 +1,38 @@
 {
   "name": "peanut-gallery",
-  "version": "1.0.0",
+  "version": "0.7.0",
   "description": "A student directory application built for Union College",
-  "main": "server.js",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "1.14.2",
+    "connect-ensure-login": "0.1.1",
+    "cookie-parser": "1.4.1",
+    "express": "4.9.5",
+    "express-session": "1.13.0",
+    "hbs": "4.0.0",
+    "hbs-utils": "0.0.3",
+    "lodash.merge": "4.0.1",
+    "lodash.pick": "4.0.0",
+    "method-override": "2.3.5",
+    "mongoose": "4.3.5",
+    "morgan": "1.6.1",
+    "passport": "0.3.2",
+    "passport-ldapauth": "0.5.0",
+    "passport-local": "1.0.0",
+    "passport-local-mongoose": "1.0.0"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/UnionTTC/peanut-gallery.git"
+    "url": "https://github.com/UnionTTC/peanut-gallery.git"
   },
-  "keywords": [
-    "directory",
-    "gallery",
-    "college",
-    "yearbook"
-  ],
   "author": "UnionTTC",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/UnionTTC/peanut-gallery/issues"
   },
-  "homepage": "https://github.com/UnionTTC/peanut-gallery#readme",
-  "dependencies": {
-    "body-parser": "^1.14.2",
-    "connect-ensure-login": "^0.1.1",
-    "cookie-parser": "^1.4.1",
-    "express": "^4.13.3",
-    "express-session": "^1.13.0",
-    "jade": "^1.11.0",
-    "lodash": "^4.0.0",
-    "mongoose": "^4.3.5",
-    "passport": "^0.3.2",
-    "passport-local": "^1.0.0",
-    "url": "^0.11.0"
-  }
+  "homepage": "https://github.com/UnionTTC/peanut-gallery"
 }

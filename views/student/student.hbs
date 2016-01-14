@@ -1,0 +1,40 @@
+{{#students}}
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+    </button>
+    <h4 class="modal-title" id="myModalLabel">{{nameFirst}} {{nameLast}}</h4>
+</div>
+<div class="modal-body">
+    <table class="table">
+        <tr class="tr">
+            <td class="td visible-xs-block visible-sm visible-md visible-lg">
+                <img src="https://w3.ucollege.edu/PG/GetImage.ashx?Id=P000{{ucid}}" class="pg-stu-img img-rounded img-responsive">
+            </td>
+
+            <td class="td visible-xs-block visible-sm visible-md visible-lg">
+                <h2>{{nameFirst}} {{nameLast}}</h2>
+                {{#if phoneNumber}}
+                <p>{{phoneNumber}}</p>{{/if}} {{#if classStanding}}
+                <p>{{classStanding}}</p>{{/if}}
+
+                <p>
+                    {{#if major}} {{major}} {{/if}} {{#if minor}} - {{minor}} {{/if}}
+                </p>
+
+                <p>{{#if dateBirth}}{{dateBirth}} - {{/if}}{{#if homeTown}}{{homeTown}}, {{/if}}{{#if homeState}}{{homeState}} {{/if}}{{#if homeCountry}}{{homeCountry}}{{/if}}</p>
+
+                <p>{{#if residenceHall}}{{residenceHall}} {{/if}}{{#if residenceNumber}}{{residenceNumber}}{{/if}}</p>
+
+                {{#if relationship}}
+                <p>
+                    {{relationship}}
+                </p>{{/if}} {{#if quote}}
+                <p><em>{{quote}}</em>
+                </p>{{/if}}
+
+                <a href="/students/{{ucid}}/edit" class="btn btn-sm btn-primary"><span class="fa fa-pencil"></span> Edit</a>
+            </td>
+        </tr>
+    </table>
+</div>
+{{/students}}

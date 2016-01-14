@@ -1,0 +1,15 @@
+<form class="navbar-form navbar-right search-form ajaxSearch" role="search">
+    <div class="form-group">
+        <input action="{{#link_to current_page}}{{url}}{{/link_to}}" name="name" type="text" class="form-control" placeholder="Search Names" value="{{query.name}}">
+        {{#if query.gender}}
+            <input type="hidden" name="gender" value="{{query.gender}}">
+        {{/if}}
+        {{#if query.residenceHall}}
+            <input type="hidden" name="residenceHall" value="{{query.residenceHall}}">
+        {{/if}}
+        {{#if query.classStanding}}
+            <input type="hidden" name="classStanding" value="{{query.classStanding}}">
+        {{/if}}
+    </div>
+    <!--<button type="submit" class="btn btn-default">Search</button>-->
+</form>
