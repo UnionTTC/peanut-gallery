@@ -1,0 +1,64 @@
+.pg-body {
+    padding: 0 15px;
+    padding-top: 70px;
+}
+
+.pg-modal-head {
+    background-color: #375a7f;
+}
+
+.centered {
+    text-align: center;
+}
+
+.pg-footer {
+    size: 70%;
+}
+
+.pg-table {
+    padding: 0;
+}
+
+.pg-btn-toggle {
+    padding: 0;
+}
+
+.pg-add-form {
+    padding: 15px;
+}
+
+.test {
+    width: 140px;
+}
+
+a.pg-thumb {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pg-header {
+    text-decoration: none;
+}
+
+.pg-header:hover {
+    text-decoration: none;
+}
+
+.no-border {
+    padding: 0;
+}
+
+.test {
+    display: inline-block;
+}
+
+.test2 {
+    width: 500px;
+}
+
+.thumbnail .caption h3,
+.thumbnail .caption p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
