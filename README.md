@@ -42,3 +42,8 @@
 * Handlebars
 * MongoDB
 * Mongoose
+
+## Contributors
+
+* [keawade](https://github.com/keawade)
+* [barberboy](https://github.com/barberboy)
