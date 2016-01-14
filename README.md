@@ -40,6 +40,6 @@
 
 * Node.js
 * Express
-* Jade
+* Handlebars
 * MongoDB
 * Mongoose
