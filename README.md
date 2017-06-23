@@ -43,10 +43,6 @@
 * MongoDB
 * Mongoose
 
-## Note
-
-This project was migrated from a private repo in which some privacy and security mistakes were made. This repo is a duplicate of the last state of that repo with all personal information used for internal demos removed.
-
 ## Contributors
 
 * [keawade](https://github.com/keawade)

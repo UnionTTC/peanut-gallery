@@ -27,7 +27,7 @@ app.set('view engine', 'hbs');
 app.engine('html', hbs.__express);
 
 // Set the port and ip address
-app.set('port', process.env.PORT || 8000);
+app.set('port', process.env.PORT || 3000);
 app.set('ip', process.env.IP || '0.0.0.0');
 
 // Set root directory.
@@ -55,10 +55,9 @@ app.use(function(err, req, res, next) {
     res.status(500).sendFile(__dirname + '/views/error.html');
 });
 
-
 // Run the server
 var server = app.listen(app.get('port'), app.get('ip'), function() {
     var address = server.address();
-    console.log("PG app running on https://%s:%s",
+    console.log("[PG] app running on https://%s:%s",
         address.address, address.port);
 });
